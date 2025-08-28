@@ -5,6 +5,7 @@ import { images } from '@/constants/images'
 import { icons } from '@/constants/icons'
 import { Image, Text } from 'react-native'
 
+
 const TabIcon = ({focused, icon, title }:any) => {
    if(focused){
     return (
@@ -74,7 +75,7 @@ const _layout = () => {
             options={{
             title: 'Saved',
             headerShown: false,
-         tabBarIcon:({ focused })=>(
+            tabBarIcon:({ focused })=>(
                         <TabIcon
                            focused={focused}
                         icon={icons.save}
